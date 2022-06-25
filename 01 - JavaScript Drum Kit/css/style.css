@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url('../img/3.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.box {
+    font-family: 'Anek Malayalam', sans-serif;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+.key {
+    border: 5px solid black;
+    background-color: #0000009e;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 18px;
+    transition: all 0.07s;
+}
+
+.playing {
+    box-shadow: 0px 0px 10px 6px #ffcf17;
+    transform: scale(1.1);
+    border-color: #ffcf17;
+}
+
+.key h2 {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.key p {
+    color: #ffcf17;
+}
+
+.footer {
+    font-family: 'Anek Malayalam', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 2px solid red; */
+    background-color: rgb(11, 10, 10);
+    margin: 4px 0px;
+    padding: 12px 8px;
+    width: 100vw;
+    position: absolute;
+    bottom: 4px;
+    font-size: 18px;
+    color: white;
+}
