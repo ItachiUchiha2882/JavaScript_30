@@ -2,7 +2,7 @@
 
 **Date:** 26/06/2020
 
-<img width="1440" alt="02 - JS Clock" src="https://user-images.githubusercontent.com/93050571/175813800-418715bd-2df8-4a77-853f-fb9be849858e.png">
+<img width="1440" alt="02 - JS Clock" src="https://user-images.githubusercontent.com/93050571/175816190-229fb249-f864-47d0-90db-8d93d05ba0b8.png">
 
 ## About CSS
 
