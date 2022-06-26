@@ -48,6 +48,8 @@
     transition: all 0.05s;
     /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
     transition-timing-function: cubic-bezier(0.49, 2.41, 0.25, 1.08);
+    border-top-left-radius: 200%;
+    border-bottom-left-radius: 200%;
 }
 
 .hour-hand {
