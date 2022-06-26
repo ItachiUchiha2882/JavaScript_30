@@ -2,8 +2,6 @@
 
 **Date:** 25/06/2022
 
-Preview-images/01 - JS Drum Kit.png
-
 ![JavaScript Drum Kit](https://github.com/sourabhb28/JavaScript_30/blob/7557d2dc7af87ef8c543b2c64b8ab9a2a76f60b2/Preview-images/01%20-%20JS%20Drum%20Kit.png)
 
 ## About HTML
