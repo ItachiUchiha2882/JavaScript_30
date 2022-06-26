@@ -1,14 +1,12 @@
 # Day 01 - JavaScript Drum Kit ✅
 
-**Date:** 04/27/2020
+**Date:** 26/06/2022
 
-I'm really happy with this first day! I learned new things and because of it I'm so excited.
+![JavaScript Drum Kit](../Preview-images/01 - JS Drum Kit.png)
 
-![JavaScript Drum Kit](../../images/challenges/01-javascript-drum-kit.png)
+## About HTML
 
-## About HTML:
-
-Today I learned the HTML tag: `<kbd>`.
+Learnings: `<kbd>`.
 
 According to the [w3Schools](https://www.w3schools.com/tags/tag_kbd.asp), it's use to define a keyboard input. In this case, we use to structure our HTML code with letter we will use to play our Drum Kit:
 
@@ -33,46 +31,46 @@ In our case, we use to customize the `<div>` with the key code number attribute:
 
 ## About CSS
 
-I transformed it in a responsive layout with `flex`. 😁
+I made a layout with `flex`. 😁
 
 ## About JavaScript
 
 He used the HTML attribute `data-key` to select the tag audio and key code number:
 
 ```javascript
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const aud = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
 ```
 
 Then it was necessary to eleminate the keys we don't use:
 
 ```javascript
-    if(!audio) return;
+    if(!aud) return;
 ```
 
-I never imagined that it was possible to use `return` on this way. If the key pressed it wasn't our pattern keys, this return nothing.
+If the key pressed it wasn't our pattern keys, this return nothing.
 
-About the delay key problem, he set the `currentTime` to `0`:
+About the delay key problem, set the `currentTime` to `0`:
 
 ```javascript
-    audio.currentTime = 0;
+    aud.currentTime = 0;
 ```
 
 And then we can play it!
 
 ```javascript
-    audio.play();
+    aud.play();
 ```
 
-To give a funny animation interaction, he added a CSS class, that was ready on the started-files.
+For the animation interaction, we add a CSS class `.playing`, that was ready on the started-files.
 
 ```javascript
     key.classList.add('playing');
 ```
 
-Ok! We can have a funniest play it! But we have some problems here. When we press the keydown and we take our fingers and we have the keyup moviment, the previous animation doesn't disappear. 
+But now we have some problems here, even if we have the keyup movement, the animation doesn't disappear. 
 
-To solve it, Wes selected all classes `.key`, he ran through an array to take the `transitionend` event listener, which show us when transition aninmation ends.
+To solve it, we select all classes `.key`, then running through an array to take the `transitionend` event listener, which show us when transition aninmation ends.
 
 With this information, we can take the property name to discover when to remove the animation `.playing` class:
 
@@ -84,19 +82,19 @@ With this information, we can take the property name to discover when to remove 
     }
 
     const keys = document.querySelectorAll('.key');
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    keys.forEach(element => element.addEventListener('transitionend', removeTransition));
 ```
 
-That's all folks! 😃
+That's all folks! ❤️
 
-Thanks WesBos to share this with us! 💖
+Thanks WesBos to share this with us! 
 
-## About my adjustments on it
+## Features to add-on
 
-I'm trying to transform it in a clickable application to be used on the cell phone. 😁
+Make it clickable to be used on the cell phone. 😁
 
-**05/08/2020:** Now is clickable!
 
 ---
 
-written by [@vanribeiro](https://github.com/vanribeiro).
+credits to [@vanribeiro](https://github.com/vanribeiro) for read-me file template.
+edited by [@sourabhb28]([https://github.com/vanribeiro](https://github.com/sourabhb28)).
