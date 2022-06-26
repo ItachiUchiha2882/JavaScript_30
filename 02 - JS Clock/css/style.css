@@ -88,6 +88,38 @@
 
 }
 
+.tick{
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 20px;
+    /* top: 25%; */
+    /* left: 50%; */
+    border-bottom-right-radius: 500%;
+    border-bottom-left-radius: 500%;
+}
+
+.twelve{
+    left: 49.5%;
+}
+
+.three{
+    transform: rotate(90deg);
+    left: 97%;
+    top: 48%;
+}
+
+.six{
+    transform: rotate(180deg);
+    left: 49.5%;
+    top: 96%;
+}
+
+.nine{
+    transform: rotate(270deg);
+    top: 48%;
+}
+
 .footer {
     box-sizing: border-box;
     text-align: center;
