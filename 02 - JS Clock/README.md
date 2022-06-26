@@ -1,8 +1,8 @@
-# Day 02 - JS and CSS Clock ✅
+# Day 02 - JS and CSS Clock 🕔
 
 **Date:** 26/06/2020
 
-![CSS Clock](JavaScript_30/Preview-images/02 - JS Clock.png)
+![CSS Clock](https://github.com/sourabhb28/JavaScript_30/blob/49cff1d85b649c795334bc456d1c0986e0f43948/Preview-images/02%20-%20JS%20Clock.png)
 
 ## About CSS
 
