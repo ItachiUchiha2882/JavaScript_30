@@ -74,6 +74,20 @@ That's all folks! ❤️
 
 Thanks [WesBos](https://github.com/wesbos) to share this with us! 
 
+## Features to add-on
+
+Make it responsive. 
+
+Show digital time also.
+
+Have an option to show region wise time.
+
+Add hour numbers to make it more clear. 😁
+
+<img width="1440" alt="02 - JS Clock" src="https://user-images.githubusercontent.com/93050571/175813800-418715bd-2df8-4a77-853f-fb9be849858e.png">
+
+
+
 ---
 credits to [@vanribeiro](https://github.com/vanribeiro) for read-me file template.
 
