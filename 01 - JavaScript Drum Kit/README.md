@@ -1,8 +1,8 @@
 # Day 01 - JavaScript Drum Kit ✅
 
-**Date:** 26/06/2022
+**Date:** 25/06/2022
 
-![JavaScript Drum Kit](../Preview-images/01 - JS Drum Kit.png)
+![JavaScript Drum Kit](../../Preview-images/01 - JS Drum Kit.png)
 
 ## About HTML
 
@@ -97,4 +97,4 @@ Make it clickable to be used on the cell phone. 😁
 ---
 
 credits to [@vanribeiro](https://github.com/vanribeiro) for read-me file template.
-edited by [@sourabhb28]([https://github.com/vanribeiro](https://github.com/sourabhb28)).
+edited by [@sourabhb28]((https://github.com/sourabhb28)).
