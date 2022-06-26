@@ -2,7 +2,9 @@
 
 **Date:** 25/06/2022
 
-![JavaScript Drum Kit](../../Preview-images/01 - JS Drum Kit.png)
+Preview-images/01 - JS Drum Kit.png
+
+![JavaScript Drum Kit](Preview-images/01 - JS Drum Kit.png)
 
 ## About HTML
 
