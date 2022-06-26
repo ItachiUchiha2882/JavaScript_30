@@ -2,7 +2,7 @@
 
 **Date:** 26/06/2020
 
-![CSS Clock](../../Preview-images/02 - JS Clock.png)
+![CSS Clock](JavaScript_30/Preview-images/02 - JS Clock.png)
 
 ## About CSS
 
