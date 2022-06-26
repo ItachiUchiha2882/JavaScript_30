@@ -2,7 +2,7 @@
 
 **Date:** 26/06/2020
 
-![CSS Clock](https://github.com/sourabhb28/JavaScript_30/blob/49cff1d85b649c795334bc456d1c0986e0f43948/Preview-images/02%20-%20JS%20Clock.png)
+<img width="1440" alt="02 - JS Clock" src="https://user-images.githubusercontent.com/93050571/175813800-418715bd-2df8-4a77-853f-fb9be849858e.png">
 
 ## About CSS
 
@@ -83,10 +83,6 @@ Show digital time also.
 Have an option to show region wise time.
 
 Add hour numbers to make it more clear. 😁
-
-<img width="1440" alt="02 - JS Clock" src="https://user-images.githubusercontent.com/93050571/175813800-418715bd-2df8-4a77-853f-fb9be849858e.png">
-
-
 
 ---
 credits to [@vanribeiro](https://github.com/vanribeiro) for read-me file template.
