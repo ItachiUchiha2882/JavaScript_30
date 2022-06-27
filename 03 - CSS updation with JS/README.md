@@ -2,8 +2,7 @@
 
 **Date:** 27/06/2022
 
-<img width="1440" alt="03 - CSS updation with JS" src="https://user-images.githubusercontent.com/93050571/175923815-699d6cd0-7bec-4b90-8b53-df75374e2fd0.png">
-
+<img width="1440" alt="03 - CSS updation with JS" src="https://user-images.githubusercontent.com/93050571/175924117-dd20c980-de0e-4f6f-b717-275784c798ae.png">
 
 ## About HTML
 
