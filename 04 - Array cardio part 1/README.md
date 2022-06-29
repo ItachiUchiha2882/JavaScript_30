@@ -85,9 +85,7 @@ When the sort() function compares two values, it sends the values to the compare
 
 ### Reducing Things
 
-After, We reduce an object array with `Array.prototype.reduce()`.
-
-Here I had some problem. My function didn't work... 😰😢😅 I don't why yet. When it run, I always receive `undefined`... 🤷 This is a function used by him:
+We reduce an object array with `Array.prototype.reduce()`.
 
 ```javascript
     const totalYears = inventors.reduce((total, inventor) => {
@@ -96,8 +94,6 @@ Here I had some problem. My function didn't work... 😰😢😅 I don't why yet
 ```
 
 This function finds the inventor age, sums them and returns the total. 
-
-I wanna try to solve it later... But in another exercise I understand how to use `reduce()` and there it worked! 😁
 
 ### More about `.reduce()` on [W3](https://www.w3schools.com/jsref/jsref_reduce.asp)
 
@@ -122,11 +118,6 @@ And important to not that the first time that the callback is run there is no "r
 `querySelectorAll` does not return an Array but returns a NodeList,
 Array.from(some_nodeList); converts a NodeList into Array.
 
-## Conclusion
-
-I learned many new things here. It took me three days to finish this Array Cardio. 😅 But I'm very happy with this! 
-
-You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/04%20-%20array%20cardio%20day%201/). 😃😉😍
 
 That's all folks! ❤️
 
