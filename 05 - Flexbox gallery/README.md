@@ -7,7 +7,13 @@
 
 ## About CSS
 
-I researched, learned and understood nice things about `flex` property doing this exercise! If you wanna know more and see [some code example](my-studies/flex-examples.html) about this [you can read my studies and notes about it](my-studies/flex-shortand.md).
+A lot of use of `flex-box` property today.
+
+> "flex:1;" this propery is used to equally distribute the area into items.
+
+Also `overflow:hidden;` property helped in avoiding the content of display to go beyond page when we add translateY() property.
+
+One more thing to add is, if your transitions regarding `font-size` is not working then try to change the unit from rem to em or px.
 
 ## About JavaScript
 
@@ -19,7 +25,7 @@ Accordding to [MDN](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenLis
 
 Here we have the function coded to show the hidden words when we click on image:
 
-```javascript
+```js
     function toggleOpen() {
         this.classList.toggle('open');
     }
@@ -28,16 +34,20 @@ According with we read before about `toggle()` method, this function verifies if
 - If the class `open` exists on the `classList`, this class is removed from the list and returns `false`. 
 - If the class `open` NOT exists on the `classList`, the `open` class is added in the list and returns `true`.
 
-## Conclusion
+We also added the `open-active` class toggle function whenever the transition ends.
 
-Learn about it is really funny! 😊💖
+## Features to add-on
 
-You can see final result [here](https://vanribeiro-30daysofjavascript.netlify.app/challenge-files/05%20-%20flex%20panel%20gallery/). 😃😉😍
+- Ability to edit the text and image by button.
 
-That's all folks! 😃
+- Make it responsive. 😁
 
-Thanks [WesBos](https://github.com/wesbos) to share this with us! 😊💖
+That's all folks! ❤️
+
+Thanks [WesBos](https://github.com/wesbos) to share this with us! 
 
 ---
 
-written by [@vanribeiro](https://github.com/vanribeiro).
+credits to [@vanribeiro](https://github.com/vanribeiro) for read-me file template.
+
+edited by [@sourabhb28](https://github.com/sourabhb28).
