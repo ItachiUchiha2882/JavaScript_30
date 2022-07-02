@@ -1,6 +1,6 @@
 # Day 06 - Type Ahead 🔎
 
-**Date:** 05/04/2020
+**Date:** 02/07/2022
 
 <img width="1440" alt="06 - Type Ahead" src="https://user-images.githubusercontent.com/93050571/176998269-dcb96820-3b42-454c-8b3e-7eb3054cf5c2.png">
 
@@ -106,6 +106,9 @@ To add an `XMLHttpRequest()`, here is the code (if needed):
 ## Features to add-on
 
 - Do fetch any live api here to keep the data updated.
+
+- Add facility to upload any json file and user will be able to filter data by his input variables. (looks advanced stuff though 🙃)
+
 - Make it responsive. 😁
 
 That's all folks! ❤️
