@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Finlandica', sans-serif;
+    background: rgb(255, 204, 0);
+}
+
+.heading {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.276);
+}
+
+.search-form {
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    text-align: center;
+    width: 30%;
+    margin: 10px 10px;
+    padding: 15px 18px;
+    font-size: 2rem;
+    border: 10px solid rgb(238, 237, 237);
+    border-radius: 5px;
+    margin-bottom: 0px;
+    /* box-shadow: 0px 0px 5px 5px gray; */
+}
+
+::placeholder {
+    color: rgb(188, 186, 186);
+}
+
+.suggestions {
+    width: 25%;
+}
+
+.suggestions>li {
+    /* border: 2px solid red; */
+    list-style: none;
+    background-color: rgb(238, 237, 237);
+    padding: 15px 10px;
+    margin-bottom: 0;
+    /* text-align: center; */
+    font-size: 1.3rem;
+    color: rgb(105, 104, 104);
+    box-shadow: 0px 0px 1px 0px grey;
+    border-bottom: 1px solid #D8D8D8;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+/* new to learn stuff below */
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(0px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(0px);
+    background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}
+
+span.population {
+    font-size: 15px;
+    text-align: right;
+}
+
+.hl {
+    background: #ffc600;
+}
+
+.footer {
+    /* display: none; */
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 2px solid red; */
+    background-color: rgba(11, 10, 10, 0.655);
+    margin: 0px 0px;
+    padding: 12px 8px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    font-size: 18px;
+    color: white;
+}
