@@ -61,7 +61,7 @@ const index = comments.findIndex((comment) => (comment.id === 823423));
 
 - `Array.prototype.slice()`
 
-The slice() method returns shallow copy of a portion of an array into a new array object selected from begin to end (end NOT included). The original array will not be modified.
+The [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) method returns shallow copy of a portion of an array into a new array object selected from begin to end (end NOT included). The original array will not be modified.
 
 Here we made entirely new array without including particular index by:
 ```js
