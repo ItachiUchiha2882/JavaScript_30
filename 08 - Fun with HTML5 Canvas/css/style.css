@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.heading {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+#draw {
+    /* border: 2px solid rgb(15, 14, 14); */
+    display: block;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px gray;
+}
+
+.footer {
+    /* display: none; */
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 2px solid red; */
+    background-color: rgba(10, 10, 11, 0.458);
+    margin: 0px 0px;
+    padding: 12px 8px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    font-size: 18px;
+    color: white;
+}
