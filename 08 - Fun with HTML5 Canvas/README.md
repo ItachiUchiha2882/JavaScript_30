@@ -1,20 +1,18 @@
 # Day 08 - Fun with HTML5 Canvas 🌈
 
-**Date:** 05/07/2022
+**Date:** 06/07/2022
 
-
+<img width="1440" alt="08 - Fun with HTML5 Canvas" src="https://user-images.githubusercontent.com/93050571/177490705-ae052b28-785f-4385-8ae4-23612acae2e3.png">
 
 ## About
 
-
+This webpage is built with HTML5 canvas and JS. Draw on the provided space by clicking and draggind the mouse pointer. Drawing will be multicolor, and will increase and decrease in width. Have fun !! 😉
 
 ## About HTML and CSS
 
-I just created a single page with instruction about how to use the draw `<canvas>` area.
+Simple use of `<canvas>`.
 
 ## About JavaScript
-
-I had used `<canvas>` before. But I learned and reviewed somethings.
 
 ### Canvas
 
@@ -22,50 +20,51 @@ Canvas is an HTML5 element for graphics that we can manipulate using the JavaScr
 
 > The HTML `<canvas>` element is used to draw graphics on a web page.
 
-Wes created a function to draw on canvas container. Briefly, to draw with canvas, thinking about this challenge, we need to:
+We created a function to draw on canvas container. Briefly, to draw with canvas, thinking about this challenge, we need to:
 
-- select the `<canvas>` element
-- get the the context
-- choose one color
-- choose a line type
+- select the `<canvas>` element.
+- get the context.
+- choose the color.
+- choose a line type.
 - determine how to draw it.
 
-Here, we have the function Wes coded to draw in canvas:
+Here, we have the function thi coded to draw in canvas:
 
 ```javascript
 function draw(e) {
-    if(!isDrawing) return;
-    context.strokeStyle = `hsl(${hue}, 100%, 40%)`;
-    context.beginPath();
-    context.moveTo(lastX, lastY);
-    context.lineTo(e.offsetX, e.offsetY);
-    context.stroke();
+    if (!isDrawing) return;
+    console.log(e);
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
+
     hue++;
-    if(hue >= 360){
+    if (hue >= 360) {
         hue = 0;
     }
 
-    if(context.lineWidth >= 100 || context.lineWidth <= 1){
+    if (ctx.lineWidth > 100 || ctx.lineWidth < 5) {
         direction = !direction;
     }
-
-    if(direction){
-        context.lineWidth++;
+    if (direction) {
+        ctx.lineWidth++;
     } else {
-        context.lineWidth--;
+        ctx.lineWidth--;
     }
+
+    document.body.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
 }
 ```
 
 Here:
 - This function basically use the mouse coordinates passed by the event listener to determine where the JavaScript is going to the draw the lines.
-- A nice thing what Wes coded is about the HSL color circle. He used this circle to make the colors of line change dynamically. He limited the `hue` (degrees) using the condition to say to this variable that if it goes up to the 360deg the hue value is set to the 0;
-- By last, he created conditions to change the width line dynamiclly.
+- A nice thing  coded is about the HSL color circle. He used this circle to make the colors of line change dynamically. He limited the `hue` (degrees) using the condition to say to this variable that if it goes up to the 360deg the hue value is set to the 0;
+- By last, we created conditions to change the width line dynamiclly.
 
 #### Mouses Event Listeners
-
-I learned about `mouse` listener today:
 
 - `mousedown`: when the mouse is clicked down;
 - `mousemove`: when the mouse is moved;
@@ -73,19 +72,31 @@ I learned about `mouse` listener today:
 - `mouseout`: when the mouse is out of an element.
 
 
-### Global Composite Operation
+We can apply some more effects on the context.
+like [globalCompositeOperation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation).
 
-We can apply some effects on the context. On this `README.md` corver I applied the `difference` type composite operations:
+## About adjustments 
 
-```javascript
-context.globalCompositeOperation = 'difference';
-```
+Using an [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Using_Pointer_Events), we could adapt this challenge to touch screen, which means now we can draw on mobile devices! 
 
-## About my adjustments on it
+## Other learnings 
 
-Using an [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events/Using_Pointer_Events), I could adapted this challenge to touch screen, which means now we can draw on mobile devices! 😍 
+An ES6 way to define multiple variables in one statement
+
+>[lastX, lastY] = [e.offsetX, e.offsetY];
+
+A nice way to set an implicit function
+()=>{}
+Example:
+>canvas.addEventListener('mousedown', ()=> isDrawing = true);
+
+The website [mothereffinghsl.com](https://mothereffinghsl.com) shows you the figure of HSL. The [HSL](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)(seel the "hsl()" section) is the Hue-saturation-lightness model using the hsl() function notation.
+
+Also I personally liked the clever use of `if-else` using `direction` flag for line-width.
 
 ## Features to add-on
+
+- Add different functionalities like clear space, undo, resize brush etc. 
 
 - Make it responsive. 😁
 
