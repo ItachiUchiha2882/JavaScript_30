@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Date created" content="This website was entirely made on 7 July 2022, Thursday, with lot of learnings :)">
+    <title>Day 09 | Dev Tools Domination</title>
+    <style>
+        body {
+            background-color: #77f0da;
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p onclick="makeGreen()">xBREAKxDOWNx</p>
+    <p><em>Psst: have a look 👀 at the JavaScript Console</em> 💁 .</p>
+
+    <script>
+        const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+        function makeGreen() {
+            const p = document.querySelector('p');
+            p.style.color = 'blue';
+            p.style.fontSize = '50px';
+        }
+        // Regular
+        console.log("hello world");
+
+        // Interpolated
+        console.log("Hello  i am %s string", "😊");
+
+        // Styled
+        console.log('%c i am great string', 'font-size:50px; background-color:yellow;')
+
+        // warning!
+        console.warn('Ohh noooo!');
+
+        // Error 
+        console.error('Error again!!!');
+
+        // Info
+        console.info('Everyone should do JS30 challenge.');
+
+        // Testing
+        // console.assert(1 === 2 , 'this is wrong');
+        const para = document.querySelector('p');
+        console.assert(para.classList.contains('box'), 'this is wrong!');
+
+        // clearing
+        // console.clear();
+
+        // Viewing DOM Elements
+        console.log(para);
+        console.dir(para);
+
+        // Grouping together
+        dogs.forEach(dog => {
+            console.group(`${dog.name}`);
+            console.log(`Name is ${dog.name}.`);
+            console.log(`${dog.name} is ${dog.age} years old.`);
+            console.groupEnd(`${dog.name}`);
+        })
+
+        // counting
+        console.count('Rohit');
+        console.count('Rohit');
+        console.count('Rohit');
+        console.count('Rohit');
+        console.count('Virat');
+        console.count('Virat');
+        console.count('Rohit');
+        console.count('Virat');
+
+        // printing array of objects in table
+        console.table(dogs);
+
+        // timing
+        console.time('fetching data');
+        
+        fetch('https://api.github.com/users/sourabhb28')
+            .then(data => data.json())
+            .then(data => {
+                console.log(data);
+                console.timeEnd('fetching data');
+            });
+
+    </script>
+</body>
+
+</html>
